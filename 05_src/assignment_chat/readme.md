@@ -1,8 +1,22 @@
-# Assignment 2: Signal Scout Chatbot
+# Assignment 2: Boussole Chatbot
 
+## Contents
+- [Summary](#summary)
+- [Services](#services)
+- [Service 1: API Calls](#service-1-api-calls)
+- [Service 2: Semantic Query](#service-2-semantic-query)
+- [Service 3: Web Search](#service-3-web-search)
+- [User Interface](#user-interface)
+- [Guardrails and Other Limitations](#guardrails-and-other-limitations)
+- [Implementation](#implementation)
+- [Setup Instructions](#setup-instructions)
+- [Example Usage](#example-usage)
+- [Summary](#summary)
+
+## Summary
 The goal of this assignment is to design and implement an AI system with a conversational interface.
 
-This implementation builds a modular chatbot called **Signal Scout**, which integrates multiple services into a single conversational system. The chatbot allows users to validate phone numbers, search music reviews using semantic search, and retrieve general information through web search.
+This implementation builds a modular chatbot called **Boussole**, which integrates multiple services into a single conversational system. The chatbot allows users to validate phone numbers, search music reviews using semantic search, and retrieve general information through web search.
 
 The system was developed incrementally, starting with simple service implementations and then integrating them into a unified chat interface. Each service is implemented independently and connected through routing logic in the main application.
 
@@ -107,17 +121,19 @@ If a restricted query is detected, the chatbot returns a safe fallback response.
 
 ## Implementation
 
-Project structure:
+Project Files:
 ```
 05_src/assignment_chat/
 ├── app.py
 ├── api_service.py
+├── build_pitchfork_db.py
+├── chroma_db/
 ├── semantic_service.py
 ├── web_search_service.py
 ├── guardrails.py
-├── build_pitchfork_db.py
-├── chroma_db/
-└── readme.md
+├── readme.md
+├── .env   (not committed)
+
 ```
 
 
